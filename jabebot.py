@@ -1,4 +1,3 @@
-from dotenv import load_dotenv
 from random import choice
 from flask import Flask, request 
 import os
