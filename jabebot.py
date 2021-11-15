@@ -1,11 +1,12 @@
+from dotenv import load_dotenv
 from random import choice
-from flask import Flask, request 
+from flask import Flask, request
 import os
 import openai
 
 load_dotenv()
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-openai.api_key = "your-openai-api-key-here"
+openai.api_key = "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"
 completion = openai.Completion()
 
 start_sequence = "\nJabe:"
