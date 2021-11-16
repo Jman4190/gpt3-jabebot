@@ -1,0 +1,1 @@
+completion = openai.Completion()

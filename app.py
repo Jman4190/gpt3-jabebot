@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = '89djhff9lhkd93'
 
 @app.route('/app', methods=['POST'])
-def jabe():
+def lizardbot():
     incoming_msg = request.values['Body']
     chat_log = session.get('chat_log')
     answer = ask(incoming_msg, chat_log)
