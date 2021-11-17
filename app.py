@@ -1,12 +1,12 @@
 from flask import Flask, request, session
 from twilio.twiml.messaging_response import MessagingResponse
-from jabebot import ask, append_interaction_to_chat_log
+from lizardbot import ask, append_interaction_to_chat_log
 
 app = Flask(__name__)
 # if for some reason your conversation with the bot gets weird, change the secret key
 app.config['SECRET_KEY'] = '89djhff9lhkd93'
 
-@app.route('/app', methods=['POST'])
+@app.route('/app', methods=['POST', 'GET'])
 def lizardbot():
     incoming_msg = request.values['Body']
     chat_log = session.get('chat_log')
