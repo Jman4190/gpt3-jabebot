@@ -1,4 +1,4 @@
-sappdirs==1.4.4
+appdirs==1.4.4
 black==20.8b1
 certifi==2020.12.5
 chardet==4.0.0
@@ -22,5 +22,5 @@ toml==0.10.2
 twilio==6.53.0
 typed-ast==1.4.2
 typing-extensions==3.7.4.3
-urllib3
+urllib3==1.26.3
 Werkzeug==1.0.1
